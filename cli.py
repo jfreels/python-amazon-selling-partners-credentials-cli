@@ -21,7 +21,7 @@ TOKEN_BASE_URL = os.getenv("AMAZON_TOKEN_BASE_URL")
 @click.group()
 def cli():
     """
-
+    Generate Amazon Selling Partners API credentials.
     """
     pass
 

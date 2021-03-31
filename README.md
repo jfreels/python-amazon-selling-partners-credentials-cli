@@ -11,6 +11,14 @@ virtualenv venv
 pip install --editable .
 ```
 
+### Create an .env file
+APP_ID=  
+APP_VERSION=beta
+APP_CLIENT_ID=  
+APP_CLIENT_SECRET=   
+AMAZON_AUTHORIZATION_BASE_URL=https://sellercentral.amazon.com/apps/authorize/consent
+AMAZON_TOKEN_BASE_URL=https://api.amazon.com/auth/o2/token
+
 ### Run the CLI
 ```bash
 cli --help
