@@ -71,8 +71,10 @@ def generate_refresh_token(
     }
 
     response = requests.post(url=token_base_url, json=params)
+    response.raise_for_status()
 
     token_data = response.json()
+
     refresh_token = token_data["refresh_token"]
 
     click.echo(refresh_token)
