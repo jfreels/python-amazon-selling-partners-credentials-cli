@@ -1,6 +1,3 @@
-import argparse
-import os
-import sys
 import uuid
 
 import click
@@ -74,9 +71,7 @@ def generate_refresh_token(
 
     response = requests.post(url=token_base_url, json=params)
 
-    # we use the refresh token in the mitto job
     token_data = response.json()
-    access_token = token_data["access_token"]
     refresh_token = token_data["refresh_token"]
 
     click.echo(refresh_token)
