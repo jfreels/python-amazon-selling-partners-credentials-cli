@@ -12,12 +12,17 @@ pip install --editable .
 ```
 
 ### Create an .env file
-APP_ID=  
+
+```bash
+APP_ID=
 APP_VERSION=beta
-APP_CLIENT_ID=  
-APP_CLIENT_SECRET=   
+APP_CLIENT_ID=
+APP_CLIENT_SECRET=  
 AMAZON_AUTHORIZATION_BASE_URL=https://sellercentral.amazon.com/apps/authorize/consent
 AMAZON_TOKEN_BASE_URL=https://api.amazon.com/auth/o2/token
+```
+
+Fill in the `APP_ID`, `APP_CLIENT_ID`, and `APP_CLIENT_SECRET` with your Amazon Selling Partners app's information.
 
 ### Run the CLI
 ```bash
